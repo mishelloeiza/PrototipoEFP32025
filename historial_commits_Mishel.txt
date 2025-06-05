@@ -1,0 +1,35 @@
+commit fa45dddf53e571cbade1109b5abb37ddb0e5bd73
+Author: Mishel Loeiza <dloeizar@miumg.edu.gt>
+Date:   Thu Jun 5 13:45:37 2025 -0600
+
+    Cambios en reportes - RamaReportes9959-23-3457-Mishel
+
+commit 0e2245fb88a28fb1b40e748a214adb1d4bd2de7a
+Author: Mishel Loeiza <dloeizar@miumg.edu.gt>
+Date:   Thu Jun 5 13:39:58 2025 -0600
+
+    Cambios en mantenimientos - RamaMantenimientos9959-23-3457-Mishel
+
+commit ff81d8cd5f9798ee98abd2c0a759357c669ea98a
+Author: Mishel Loeiza <dloeizar@miumg.edu.gt>
+Date:   Thu Jun 5 13:21:26 2025 -0600
+
+    Cambios en contenedor - RamaContenedor9959-23-3457-Mishel
+
+commit 6487d1f932e11ffd1ce97f21caee8fb667eb5608
+Author: Mishel Loeiza <dloeizar@miumg.edu.gt>
+Date:   Thu Jun 5 12:57:56 2025 -0600
+
+    Subiendo cambios en RamaSeguridad para integrar a main
+
+commit c6d7a2a342185f5d8bd6d3587b6e8faf9bd04ad2
+Author: Mishel Loeiza <dloeizar@miumg.edu.gt>
+Date:   Thu Jun 5 11:20:02 2025 -0600
+
+    PROTOTIPO BODEGA MISHEL LOEIZA 9959-23-3457
+
+commit ba487e49823e982345996a4996159cae8335192b
+Author: Mishel Loeiza <dloeizar@miumg.edu.gt>
+Date:   Thu Jun 5 11:16:28 2025 -0600
+
+    primer commit
