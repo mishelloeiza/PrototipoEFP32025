@@ -30,15 +30,26 @@
 		<groupHeader>
 			<band height="40">
 				<textField>
-					<reportElement style="SubTitle" x="47" y="13" width="506" height="24" forecolor="#CC0000" uuid="519a7a14-bf73-448f-8478-920c2a7f9399"/>
+					<reportElement style="SubTitle" x="7" y="13" width="506" height="24" forecolor="#CC0000" uuid="519a7a14-bf73-448f-8478-920c2a7f9399"/>
 					<textElement>
 						<font isBold="true"/>
 					</textElement>
 					<textFieldExpression><![CDATA[$F{pkid}]]></textFieldExpression>
 				</textField>
 				<rectangle>
-					<reportElement mode="Opaque" x="0" y="13" width="36" height="24" forecolor="#CCCCCC" backcolor="#CCCCCC" uuid="15fc8a28-2703-44a7-86df-7fba25b884e0"/>
+					<reportElement mode="Opaque" x="0" y="13" width="0" height="24" forecolor="#CCCCCC" backcolor="#CCCCCC" uuid="15fc8a28-2703-44a7-86df-7fba25b884e0"/>
 				</rectangle>
+				<textField>
+					<reportElement style="SubTitle" x="95" y="13" width="460" height="20" uuid="b9c38f5c-51bd-40f2-92f0-ccb4f43ec6ff"/>
+					<textElement>
+						<font size="16" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{nombre}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="Detail" x="212" y="13" width="555" height="15" uuid="20b9e262-26ad-419f-8a14-715fb08416a9"/>
+					<textFieldExpression><![CDATA[$F{fkidtipobodega}]]></textFieldExpression>
+				</textField>
 			</band>
 		</groupHeader>
 		<groupFooter>
@@ -48,15 +59,7 @@
 	<group name="nombre">
 		<groupExpression><![CDATA[$F{nombre}]]></groupExpression>
 		<groupHeader>
-			<band height="30">
-				<textField>
-					<reportElement style="SubTitle" x="0" y="4" width="460" height="20" uuid="b9c38f5c-51bd-40f2-92f0-ccb4f43ec6ff"/>
-					<textElement>
-						<font size="16" isBold="true"/>
-					</textElement>
-					<textFieldExpression><![CDATA[$F{nombre}]]></textFieldExpression>
-				</textField>
-			</band>
+			<band height="30"/>
 		</groupHeader>
 	</group>
 	<group name="direccion">
@@ -71,14 +74,20 @@
 	<title>
 		<band height="70" splitType="Stretch">
 			<staticText>
-				<reportElement style="Title" x="0" y="13" width="263" height="33" uuid="b05c5fdd-861b-4d95-86fc-e4735fb0751d"/>
+				<reportElement style="Title" x="95" y="13" width="263" height="33" uuid="b05c5fdd-861b-4d95-86fc-e4735fb0751d"/>
 				<textElement verticalAlignment="Middle"/>
 				<text><![CDATA[Reporte de Bodegas]]></text>
 			</staticText>
 			<staticText>
-				<reportElement style="SubTitle" x="117" y="46" width="157" height="22" uuid="cf7c5f50-80c5-40d6-9264-a59cde71f226"/>
-				<text><![CDATA[Oscar Morales]]></text>
+				<reportElement style="SubTitle" x="65" y="48" width="368" height="22" uuid="cf7c5f50-80c5-40d6-9264-a59cde71f226"/>
+				<text><![CDATA[MISHEL LOEIZA 9959-23-3457]]></text>
 			</staticText>
+			<ellipse>
+				<reportElement x="372" y="28" width="100" height="20" uuid="4c5e82ef-ba91-453d-b344-73177860711a"/>
+			</ellipse>
+			<ellipse>
+				<reportElement x="0" y="-7" width="100" height="20" uuid="19bd62fa-b11e-4cc1-8fc0-6ddefbb14f03"/>
+			</ellipse>
 		</band>
 	</title>
 	<pageHeader>
@@ -106,10 +115,6 @@
 					<pen lineWidth="0.5" lineColor="#999999"/>
 				</graphicElement>
 			</line>
-			<textField>
-				<reportElement style="Detail" x="0" y="0" width="555" height="15" uuid="20b9e262-26ad-419f-8a14-715fb08416a9"/>
-				<textFieldExpression><![CDATA[$F{fkidtipobodega}]]></textFieldExpression>
-			</textField>
 		</band>
 	</detail>
 	<columnFooter>

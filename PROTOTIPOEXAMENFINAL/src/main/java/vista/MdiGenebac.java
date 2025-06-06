@@ -1,5 +1,5 @@
 package vista;
-import Controlador.bancos.SesionInactiva;
+import Controlador.bodegas.SesionInactiva;
 import Controlador.seguridad.permisos;
 
 import Controlador.seguridad.Bitacora;
@@ -13,14 +13,7 @@ import java.net.URL;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
-import vista.bancos.MantenimientoBancos;
-import vista.bancos.MantenimientoTipo_moneda;
-import vista.bancos.MantenimientoTipo_operacion_bancaria;
-import vista.bancos.MantenimientoTasa_cambio_diario;
-import vista.bancos.MantenimientoTipo_pago;
-import vista.bancos.TransacionalMovimiento_bancario;
-import vista.seguridad.MantenimientoUsuario;
-import vista.seguridad.MantenimientoPerfiles;
+
 
 import vista.seguridad.MantenimientoBitacora;
 
@@ -487,9 +480,9 @@ new SesionInactiva(this, labelContador);
     }//GEN-LAST:event_jButton10ActionPerformed
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
-        MdiBancoPro menuBancopro = new MdiBancoPro();
-        menuBancopro.setVisible(true);
-        this.dispose();
+       // MdiBancoPro menuBancopro = new MdiBancoPro();
+        //menuBancopro.setVisible(true);
+        //this.dispose();
     }//GEN-LAST:event_jButton8ActionPerformed
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed

@@ -17,18 +17,10 @@ import java.io.File;
 import java.sql.Connection;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
-import vista.bancos.MantenimientoBancos;
-import vista.bancos.MantenimientoTipo_moneda;
-import vista.bancos.MantenimientoTipo_operacion_bancaria;
-import vista.bancos.MantenimientoTasa_cambio_diario;
-import vista.bancos.MantenimientoTipo_cuenta;
-import vista.bancos.MantenimientoTipo_pago;
-import vista.bancos.TransacionalMovimiento_bancario;
-import vista.seguridad.MantenimientoUsuario;
-import vista.seguridad.MantenimientoPerfiles;
+
 
 import vista.seguridad.MantenimientoBitacora;
-import vista.bancos.MantenimientoBodega;
+import vista.bodegas.MantenimientoBodega;
 
 
 
@@ -105,7 +97,6 @@ private permisos permisosUsuarioActual;
         jButton8 = new javax.swing.JButton();
         jLabel18 = new javax.swing.JLabel();
         LOGOINICIAL = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
 
         jMenuItem1.setText("jMenuItem1");
@@ -202,7 +193,7 @@ private permisos permisosUsuarioActual;
 
         jLabel8.setBackground(new java.awt.Color(255, 255, 255));
         jLabel8.setFont(new java.awt.Font("Bauhaus 93", 0, 24)); // NOI18N
-        jLabel8.setText("MENÙ -catalogos");
+        jLabel8.setText("MENÙ -CATALOGOS");
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -224,7 +215,7 @@ private permisos permisosUsuarioActual;
                 .addComponent(jButton11)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jButton12)
-                .addContainerGap(258, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -345,7 +336,7 @@ private permisos permisosUsuarioActual;
                 .addContainerGap(569, Short.MAX_VALUE))
         );
 
-        LOGOINICIAL.setIcon(new javax.swing.ImageIcon("C:\\Users\\user\\Desktop\\COMENTARIOS DE MODULO BANCO\\proyectop32k25\\proyectoumg\\Integracion\\PROTOTIPOEXAMENFINAL\\src\\main\\java\\vista\\home.png")); // NOI18N
+        LOGOINICIAL.setIcon(new javax.swing.ImageIcon("C:\\Users\\user\\Desktop\\EXAMEN FINAL\\PrototipoEFP32025\\PROTOTIPOEXAMENFINAL\\src\\main\\java\\vista\\LOGOFIN.png")); // NOI18N
         LOGOINICIAL.addAncestorListener(new javax.swing.event.AncestorListener() {
             public void ancestorAdded(javax.swing.event.AncestorEvent evt) {
                 LOGOINICIALAncestorAdded(evt);
@@ -356,15 +347,9 @@ private permisos permisosUsuarioActual;
             }
         });
 
-        jLabel6.setFont(new java.awt.Font("Broadway", 1, 36)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel6.setText("MANTENIMIENTOS SISTEMA BANCARIO");
-
         jDesktopPane1.setLayer(jPanel3, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jDesktopPane1.setLayer(jPanel1, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jDesktopPane1.setLayer(LOGOINICIAL, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jDesktopPane1.setLayer(jLabel6, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout jDesktopPane1Layout = new javax.swing.GroupLayout(jDesktopPane1);
         jDesktopPane1.setLayout(jDesktopPane1Layout);
@@ -374,11 +359,9 @@ private permisos permisosUsuarioActual;
                 .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jDesktopPane1Layout.createSequentialGroup()
                         .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 226, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(LOGOINICIAL, javax.swing.GroupLayout.PREFERRED_SIZE, 279, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel6)
-                        .addGap(0, 0, Short.MAX_VALUE))
+                        .addGap(272, 272, 272)
+                        .addComponent(LOGOINICIAL, javax.swing.GroupLayout.PREFERRED_SIZE, 686, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 521, Short.MAX_VALUE))
                     .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
@@ -386,16 +369,10 @@ private permisos permisosUsuarioActual;
             jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jDesktopPane1Layout.createSequentialGroup()
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jDesktopPane1Layout.createSequentialGroup()
-                        .addGap(121, 121, 121)
-                        .addComponent(jLabel6))
-                    .addGroup(jDesktopPane1Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jDesktopPane1Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(LOGOINICIAL, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(LOGOINICIAL, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -407,7 +384,7 @@ private permisos permisosUsuarioActual;
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jDesktopPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 237, Short.MAX_VALUE))
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -520,16 +497,16 @@ ventana.setLocation(
         }
 
         // Crea y muestra la nueva ventana
-        MantenimientoUsuario ventana = new MantenimientoUsuario();
-        jDesktopPane1.add(ventana);
+     //   MantenimientoUsuario ventana = new MantenimientoUsuario();
+      //  jDesktopPane1.add(ventana);
 
         // Centra la ventana dentro del JDesktopPane
-        Dimension desktopSize = jDesktopPane1.getSize();
-        Dimension FrameSize = ventana.getSize();
-        ventana.setLocation(
-            (desktopSize.width - FrameSize.width) / 2,
-            (desktopSize.height - FrameSize.height) / 2
-        );
+        //Dimension desktopSize = jDesktopPane1.getSize();
+        //Dimension FrameSize = ventana.getSize();
+        //ventana.setLocation(
+          //  (desktopSize.width - FrameSize.width) / 2,
+            //(desktopSize.height - FrameSize.height) / 2
+      //  );
     }//GEN-LAST:event_jButton11ActionPerformed
 
     private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
@@ -539,16 +516,16 @@ ventana.setLocation(
         }
 
         // Crea y muestra la nueva ventana
-        MantenimientoPerfiles ventana = new MantenimientoPerfiles();
-        jDesktopPane1.add(ventana);
+       // MantenimientoPerfiles ventana = new MantenimientoPerfiles();
+        //jDesktopPane1.add(ventana);
 
         // Centra la ventana dentro del JDesktopPane
-        Dimension desktopSize = jDesktopPane1.getSize();
-        Dimension FrameSize = ventana.getSize();
-        ventana.setLocation(
-            (desktopSize.width - FrameSize.width) / 2,
-            (desktopSize.height - FrameSize.height) / 2
-        );
+       // Dimension desktopSize = jDesktopPane1.getSize();
+       // Dimension FrameSize = ventana.getSize();
+       // ventana.setLocation(
+           // (desktopSize.width - FrameSize.width) / 2,
+            //(desktopSize.height - FrameSize.height) / 2
+       // );
     }//GEN-LAST:event_jButton12ActionPerformed
 
     private void LOGOINICIALAncestorAdded(javax.swing.event.AncestorEvent evt) {//GEN-FIRST:event_LOGOINICIALAncestorAdded
@@ -756,7 +733,6 @@ public static void main(String args[]) {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JMenuBar jMenuBar1;

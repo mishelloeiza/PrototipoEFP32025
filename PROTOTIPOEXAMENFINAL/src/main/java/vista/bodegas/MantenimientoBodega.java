@@ -3,10 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package vista.bancos;
+package vista.bodegas;
 
-import Modelo.seguridad.BodegaDAO;
-import Controlador.seguridad.Bodega;
+import Modelo.bodegas.BodegaDAO;
+import Controlador.bodegas.Bodega;
 import java.util.List;
 import javax.swing.table.DefaultTableModel;
 import java.io.File;
@@ -112,7 +112,6 @@ public class MantenimientoBodega extends javax.swing.JInternalFrame {
         txtdireccion = new javax.swing.JTextField();
         Estado = new javax.swing.JLabel();
         txtestado = new javax.swing.JTextField();
-        jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
 
@@ -122,7 +121,7 @@ public class MantenimientoBodega extends javax.swing.JInternalFrame {
         setClosable(true);
         setIconifiable(true);
         setMaximizable(true);
-        setTitle("MISHEL LOEIZA");
+        setTitle(" MISHEL LOEIZA 9959-23-3457");
         setVisible(true);
 
         btnEliminar.setText("Eliminar");
@@ -219,17 +218,10 @@ public class MantenimientoBodega extends javax.swing.JInternalFrame {
         });
 
         Direccion.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
-        Direccion.setText("Telefono");
+        Direccion.setText("Direcciòn");
 
         Estado.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
         Estado.setText("Estado");
-
-        jButton2.setText("Reportes");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
-            }
-        });
 
         jButton3.setText("REPORTE");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -308,9 +300,7 @@ public class MantenimientoBodega extends javax.swing.JInternalFrame {
                                 .addComponent(jButton1)
                                 .addGap(191, 191, 191))
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(14, 14, 14)
-                                .addComponent(jButton2)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addGap(14, 281, Short.MAX_VALUE)
                                 .addComponent(label4)
                                 .addGap(18, 18, 18)))
                         .addComponent(cbox_empleado, javax.swing.GroupLayout.PREFERRED_SIZE, 263, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -379,9 +369,7 @@ public class MantenimientoBodega extends javax.swing.JInternalFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 303, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jButton1))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton2)
-                        .addGap(28, 28, 28))))
+                        .addGap(28, 80, Short.MAX_VALUE))))
         );
 
         cbox_empleado.setVisible(false);
@@ -459,17 +447,6 @@ public class MantenimientoBodega extends javax.swing.JInternalFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_cbox_empleadoActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        
-        BodegaDAO bodegaDAO = new BodegaDAO();
-        bodegaDAO.imprimirReporte(); 
-        UsuarioConectado usuarioEnSesion = new UsuarioConectado();
-        int resultadoBitacora=0;
-        Bitacora bitacoraRegistro = new Bitacora();
-        resultadoBitacora = bitacoraRegistro.setIngresarBitacora(usuarioEnSesion.getIdUsuario(), APLICACION,  "Visualizar reporte Bodega");
-        
-    }//GEN-LAST:event_jButton2ActionPerformed
-
     private void txtnombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtnombreActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtnombreActionPerformed
@@ -483,7 +460,7 @@ public class MantenimientoBodega extends javax.swing.JInternalFrame {
         try {
                            Connection connectio = Conexion.getConnection();
             report = JasperCompileManager.compileReport(new File("").getAbsolutePath()
-                    + "/src/main/java/reporte/banco/ReportePrueba.jrxml");
+                    + "/src/main/java/reporte/bodegas/ReportePrueba.jrxml");
 //
             print = JasperFillManager.fillReport(report, p, connectio);
 
@@ -528,7 +505,6 @@ public class MantenimientoBodega extends javax.swing.JInternalFrame {
     private javax.swing.JButton btnRegistrar;
     private javax.swing.JComboBox<String> cbox_empleado;
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel1;

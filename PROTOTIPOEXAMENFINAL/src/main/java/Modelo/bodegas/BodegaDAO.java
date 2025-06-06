@@ -4,9 +4,9 @@
  * and open the template in the editor.
  */
 
-package Modelo.seguridad;
+package Modelo.bodegas;
 
-import Controlador.seguridad.Bodega; 
+import Controlador.bodegas.Bodega; 
 import Modelo.Conexion;
 import java.io.File;
 import java.sql.Connection;
