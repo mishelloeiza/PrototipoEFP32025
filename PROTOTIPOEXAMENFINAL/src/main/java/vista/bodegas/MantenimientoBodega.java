@@ -460,7 +460,7 @@ public class MantenimientoBodega extends javax.swing.JInternalFrame {
         try {
                            Connection connectio = Conexion.getConnection();
             report = JasperCompileManager.compileReport(new File("").getAbsolutePath()
-                    + "/src/main/java/reporte/bodegas/ReportePrueba.jrxml");
+                    + "/src/main/java/reporte/bodegas/ReportePrueba.jrxml");//Reporte finalizado
 //
             print = JasperFillManager.fillReport(report, p, connectio);
 
