@@ -41,30 +41,7 @@ CREATE TABLE `bitacora` (
 -- Volcado de datos para la tabla `bitacora`
 --
 
-INSERT INTO `bitacora` (`id_bitacora`, `id_usuario`, `id_aplicacion`, `fecha`, `ip`, `accion`, `nombre_pc`) VALUES
-(1, 2026, 1, '2025-06-04 12:00:02', '192.168.1.4', 'Inicio Sesion', 'LenovoIdeaPadS3'),
-(2, 2026, 1, '2025-06-04 12:17:10', '192.168.1.4', 'Inicio Sesion', 'LenovoIdeaPadS3'),
-(3, 2026, 201, '2025-06-04 12:17:27', '192.168.1.4', 'Ingreso Datos Perfiles', 'LenovoIdeaPadS3'),
-(4, 2026, 201, '2025-06-04 12:17:35', '192.168.1.4', 'Ingreso Datos Perfiles', 'LenovoIdeaPadS3'),
-(5, 2026, 1, '2025-06-04 12:17:59', '192.168.1.4', 'Inicio Sesion', 'LenovoIdeaPadS3'),
-(6, 2026, 201, '2025-06-04 12:18:14', '192.168.1.4', 'Ingreso Datos Perfiles', 'LenovoIdeaPadS3'),
-(7, 2026, 1, '2025-06-04 12:40:02', '192.168.1.4', 'Inicio Sesion', 'LenovoIdeaPadS3'),
-(8, 2026, 1, '2025-06-04 12:41:10', '192.168.1.4', 'Inicio Sesion', 'LenovoIdeaPadS3'),
-(9, 2026, 100, '2025-06-04 12:41:23', '192.168.1.4', 'Ingreso Datos Usuario', 'LenovoIdeaPadS3'),
-(10, 2039, 1, '2025-06-04 12:41:39', '192.168.1.4', 'Inicio Sesion', 'LenovoIdeaPadS3'),
-(11, 2026, 1, '2025-06-04 13:01:34', '192.168.1.4', 'Inicio Sesion', 'LenovoIdeaPadS3'),
-(12, 2039, 1, '2025-06-04 13:33:00', '192.168.1.4', 'Inicio Sesion', 'LenovoIdeaPadS3'),
-(13, 2039, 1, '2025-06-04 13:33:54', '192.168.1.4', 'Inicio Sesion', 'LenovoIdeaPadS3'),
-(14, 2039, 101, '2025-06-04 13:34:25', '192.168.1.4', 'Ingreso Datos Vendedores', 'LenovoIdeaPadS3'),
-(15, 2039, 101, '2025-06-04 13:34:29', '192.168.1.4', 'Borrar Datos Vendedores', 'LenovoIdeaPadS3'),
-(16, 2039, 1, '2025-06-04 13:36:17', '192.168.1.4', 'Inicio Sesion', 'LenovoIdeaPadS3'),
-(17, 2039, 1, '2025-06-04 13:37:58', '192.168.1.4', 'Inicio Sesion', 'LenovoIdeaPadS3'),
-(18, 2039, 1, '2025-06-04 13:38:56', '192.168.1.4', 'Inicio Sesion', 'LenovoIdeaPadS3'),
-(19, 2039, 1, '2025-06-04 13:42:02', '192.168.1.4', 'Inicio Sesion', 'LenovoIdeaPadS3'),
-(20, 2039, 1, '2025-06-04 13:44:43', '192.168.1.4', 'Inicio Sesion', 'LenovoIdeaPadS3'),
-(21, 2039, 1, '2025-06-05 11:55:23', '172.20.10.3', 'Inicio Sesion', 'LenovoIdeaPadS3'),
-(22, 2039, 1, '2025-06-05 11:56:49', '172.20.10.3', 'Inicio Sesion', 'LenovoIdeaPadS3'),
-(23, 2039, 1, '2025-06-05 12:03:17', '172.20.10.3', 'Inicio Sesion', 'LenovoIdeaPadS3');
+
 
 -- --------------------------------------------------------
 
@@ -98,7 +75,9 @@ CREATE TABLE `usuario` (
 
 INSERT INTO `usuario` (`id_usuario`, `username`, `password`) VALUES
 (2026, 'admin', '5994471abb01112afcc18159f6cc74b4f511b99806da59b3caf5a9c173cacfc5'),
-(2039, 'oscar', '5994471abb01112afcc18159f6cc74b4f511b99806da59b3caf5a9c173cacfc5');
+(2039, 'oscar', '5994471abb01112afcc18159f6cc74b4f511b99806da59b3caf5a9c173cacfc5'),
+(2040, 'Ruddy', '5994471abb01112afcc18159f6cc74b4f511b99806da59b3caf5a9c173cacfc5'),
+(2041, 'Mishel', '5994471abb01112afcc18159f6cc74b4f511b99806da59b3caf5a9c173cacfc5');
 
 --
 -- Índices para tablas volcadas
